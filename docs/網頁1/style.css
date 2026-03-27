@@ -1,0 +1,71 @@
+.container {
+    /* 一開始外部容器要宣告 display 為 flex 才能使用 */
+    display: flex;
+
+    /* 當寬度小於設定的寬度時自動換行,內部元件不能設定 flex */
+    flex-wrap: wrap;
+
+    height: 80vh;
+    border: 1px solid red;
+
+}
+
+#column {
+
+    /* 水平排列 */
+    /* 預設，由左到右，由上而下 */
+    /* flex-direction: row; */
+
+    /* 由右到左，由上而下 */
+    /* flex-direction: row-reverse; */
+
+    /* 垂直排列 */
+    /* 由上而下，由左而右 */
+    flex-direction: column;
+
+    /* 由下而上，由左而右 */
+    /* flex-direction: column-reverse; */
+
+
+    /* justify-content屬性定義了瀏覽器之間，如何分配順著彈性容器主軸的元素之間及其周圍的空間 */
+    /* 元件於主軸的位置，方向受 flex-direction 影響 */
+    /* 預設，置前 */
+    /* justify-content: flex-start; */
+    /* 置中 */
+    /* justify-content: center; */
+    /* 置後 */
+    /* justify-content: flex-end; */
+    /* 均分 */
+    /* justify-content: space-around; */
+    /* 靠緊前後，中間均分 */
+    justify-content: space-between;
+    /* 空格均分 */
+    /* justify-content: space-evenly; */
+    
+
+    /* 元件於次軸的位置，方向受 flex-direction 影響 */
+    /* 預設，置前 */
+    /* align-items: flex-start; */
+    /* 置中 */
+    align-items: center;
+    /* 置中，多行時使用可將元件集中 */
+    align-content: center;
+    /* 置後 */
+    /* align-items: flex-end;  */
+   
+}
+
+#topic {
+    font-size: 75px;
+    text-align: center;
+}
+
+#sendBtn {
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+    margin-bottom: 10px;
+   
+}
+
+
