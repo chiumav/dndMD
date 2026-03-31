@@ -22,6 +22,11 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10"></script>
         <!-- <script src="../0.sp/vue.min.js"></script> -->
         <script src="script.js"></script>
+
+        <!-- 不使用快取 -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
         
     </body>
 </html>
